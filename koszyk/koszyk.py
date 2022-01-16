@@ -44,3 +44,29 @@ class Koszyk(object):
             del self.koszyk[product_id]
         self.save()
 
+    def clear(self):
+        del self.session[settings.KOSZYK_SESSION_ID]
+        self.save()
+
+    def __iter__(self):
+        """
+         Iteracja przez elementy koszyka na zakupy i pobranie produktów z bazy danych.
+         """
+        product_ids = self.koszyk.keys()
+        products = Product.objects.filter(id__in=product_ids)
+
+        koszyk = self.koszyk.copy()
+        for product in products:
+            koszyk[str(product.id)]['product'] = product
+        for item in koszyk.values():
+            item['price'] = Decimal(item['price'])
+            item['total_price'] = item['item'] * item['quantity']
+            yield item
+
+    def __len__(self):
+        """
+        Obliczenie liczby wszystkich elementów w koszyku na zakupy.
+        """
+        return sum(item['quantinty'] for item in self.koszyk.values())
+
+
