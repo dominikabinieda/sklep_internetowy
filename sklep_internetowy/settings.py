@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'sklep_internetowy',
+    'koszyk.apps.KoszykConfig',
 ]
 
 MIDDLEWARE = [
@@ -129,3 +130,5 @@ REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     'PAGE_SIZE': 10
 }
+
+KOSZYK_SESSION_ID = 'koszyk'
