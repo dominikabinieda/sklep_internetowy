@@ -35,5 +35,6 @@ urlpatterns = [
     path('<slug:category_slug>/', views.product_list, name='product_list_by_category'),
     path('<int:id>/<slug:slug>/', views.product_detail, name='product_detail'),
     path('admin/', admin.site.urls),
-    #path('', include('sklep_internetowy.urls', namespace='sklep_internetowy')),
+    path('koszyk/', include('koszyk.urls', namespace='koszyk'))
+    #path('', include('shop.urls', namespace='shop')),
 ]
