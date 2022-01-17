@@ -38,8 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework',
-    'sklep_internetowy',
+    #'rest_framework',
+    'sklep',
+    #'sklep_internetowy',
     'koszyk.apps.KoszykConfig',
 ]
 

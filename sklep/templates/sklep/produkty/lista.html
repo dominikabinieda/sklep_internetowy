@@ -10,7 +10,7 @@
     <h3>Kategorie</h3>
     <ul>
       <li {% if not category %}class="selected"{% endif %}>
-        <a href="{% url "sklep:product_list" %}">All</a>
+        <a href="{% url "sklep:product_list" %}">Wszystkie</a>
       </li>
       {% for c in categories %}
         <li {% if category.slug == c.slug %}class="selected"{% endif %}>
@@ -28,7 +28,7 @@
         </a>
         <a href="{{ product.get_absolute_url }}">{{ product.name }}</a>
         <br>
-        ${{ product.price }}
+        PLN{{ product.price }}
       </div>
     {% endfor %}
   </div>
