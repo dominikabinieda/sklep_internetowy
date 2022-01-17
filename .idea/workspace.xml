@@ -2,27 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="805118e5-c182-4bee-bbb0-7b043354fac8" name="Changes" comment="kilka malych zmian w html oraz views w funkcji wyswietlaniu koszyka">
-      <change afterPath="$PROJECT_DIR$/sklep/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sklep/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/koszyk/koszyk.py" beforeDir="false" afterPath="$PROJECT_DIR$/koszyk/koszyk.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/koszyk/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/koszyk/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/koszyk/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/koszyk/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sklep_internetowy/formatowanie/obrazy/brak_zdjecia.png" beforeDir="false" afterPath="$PROJECT_DIR$/sklep/formatowanie/obrazy/brak_zdjecia.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sklep_internetowy/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/sklep_internetowy/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sklep_internetowy/sklep/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/sklep/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sklep_internetowy/sklep/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/sklep/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sklep_internetowy/sklep/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/sklep/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sklep_internetowy/sklep/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/sklep/migrations/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sklep_internetowy/sklep/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/sklep/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sklep_internetowy/sklep/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/sklep/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sklep_internetowy/sklep/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/sklep/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sklep_internetowy/sklep/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/sklep/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sklep_internetowy/templates/sklep/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/sklep/templates/sklep/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sklep_internetowy/templates/sklep/produkty/lista.html" beforeDir="false" afterPath="$PROJECT_DIR$/sklep/templates/sklep/produkty/lista.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sklep_internetowy/templates/sklep/produkty/szczegoly.html" beforeDir="false" afterPath="$PROJECT_DIR$/sklep/templates/sklep/produkty/szczegoly.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sklep_internetowy/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/sklep_internetowy/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zamowienia/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/zamowienia/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zamowienia/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/zamowienia/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zamowienia/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/zamowienia/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zamowienia/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/zamowienia/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

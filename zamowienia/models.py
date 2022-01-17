@@ -1,5 +1,5 @@
 from django.db import models
-from sklep_internetowy.sklep.models import Product
+from sklep.models import Product
 
 
 class Zamowienia(models.Model):
