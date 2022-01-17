@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     #'rest_framework',
     'sklep',
-    #'sklep_internetowy',
+    'sklep_internetowy',
     'koszyk.apps.KoszykConfig',
     'zamowienia.apps.ZamowieniaConfig',
 ]
