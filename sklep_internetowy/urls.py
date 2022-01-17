@@ -15,15 +15,12 @@ Including another URLconf
 """
 
 from django.urls import include, path
-from rest_framework import routers
-from sklep_internetowy.sklep import views
+#from rest_framework import routers
+#from sklep import views
 from django.contrib import admin
 from django.conf import settings
 from django.conf.urls.static import static
 
-router = routers.DefaultRouter()
-router.register(r'users', views.UserViewSet)
-router.register(r'groups', views.GroupViewSet)
 
 # Wire up our API using automatic URL routing.
 # Additionally, we include login URLs for the browsable API.
@@ -31,11 +28,15 @@ router.register(r'groups', views.GroupViewSet)
 app_name = 'sklep'
 
 urlpatterns = [
-    path('', include(router.urls)),
-    path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
-    path('', views.product_list, name='product_list'),
     path('admin/', admin.site.urls),
-    path('koszyk/', include('koszyk.urls', namespace='koszyk'))
+    path('koszyk/', include('koszyk.urls', namespace='koszyk')),
+    path('zamowienia/', include('zamowienia.urls', namespace='zamowienia')),
+    path('', include('sklep.urls', namespace='sklep')), #cos tu nie teges
+
+    #path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+    #path('', views.product_list, name='product_list'),
+    #path('<slug:category_slug>/', views.product_list(), name='product_list_by_category'), #usunac w razie w
+    #path('<int:id>/<slug:slug>/', views.product_detail, name='product_detail'), #usunac w razei w
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL,
