@@ -13,3 +13,6 @@ class OrderAdmin(admin.ModelAdmin):
                     'utworzono', 'zaktualizowano']
     list_filter = ['platnosc', 'utworzono', 'zaktualizowano']
     inlines = [OrderItemInline]
+
+
+#admin.site.register(Zamowienia, OrderAdmin)

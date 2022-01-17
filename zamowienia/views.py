@@ -18,6 +18,7 @@ def order_create(request):
     # Usunięcie zawartości koszyka na zakupy.
         koszyk.clear()
     # zmienna koszyk, jak nie działa to zmienić na plik koszyk
+
         return render(request,
                       'zamowienia/zamowienie/utworzone.html',
                       {'order': order})

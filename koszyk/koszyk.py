@@ -1,6 +1,6 @@
 from decimal import Decimal
 from django.conf import settings
-from sklep_internetowy.sklep.models import Product
+from sklep.models import Product
 
 
 class Koszyk(object):

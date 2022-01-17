@@ -1,8 +1,8 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.views.decorators.http import require_POST
 from koszyk.forms import KoszykAddProductForm
-from koszyk.koszyk import Koszyk
-from sklep_internetowy.sklep.models import Product
+from .koszyk import Koszyk
+from sklep.models import Product
 
 
 @require_POST
