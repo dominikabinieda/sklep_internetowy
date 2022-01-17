@@ -30,11 +30,10 @@ app_name = 'sklep'
 
 urlpatterns = [
     path('', include(router.urls)),
-    path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
-    path('', views.product_list, name='product_list'),
-    path('<slug:category_slug>/', views.product_list, name='product_list_by_category'),
-    path('<int:id>/<slug:slug>/', views.product_detail, name='product_detail'),
     path('admin/', admin.site.urls),
-    path('koszyk/', include('koszyk.urls', namespace='koszyk'))
-    #path('', include('shop.urls', namespace='shop')),
+    path('koszyk/', include('koszyk.urls', namespace='koszyk')),
+    path('', include('shop.urls', namespace='shop')),
 ]
+# if settings.DEBUG:
+#     urlpatterns += static(settings.MEDIA_URL,
+#                           document_root=settings.MEDIA_ROOT)

@@ -4,6 +4,7 @@ from rest_framework import permissions
 from sklep_internetowy.sklep.serializers import UserSerializer, GroupSerializer
 from django.shortcuts import render, get_object_or_404
 from .models import Category, Product
+from koszyk.forms import KoszykAddProductForm #Dodanie produktu do koszyka na zakupy
 
 
 def product_list(request, category_slug=None):
@@ -29,7 +30,16 @@ def product_detail(request, id, slug):
                   'shop/product/detail.html',
                   {'product': product})
 
-
+#Dodanie produktu do koszyka na zakupy
+def product_detail(request, id, slug):
+    product = get_object_or_404(Product, id = id,
+                                slug=slug,
+                                available=True)
+    koszyk_produkt_form = KoszykAddProductForm()
+    return render(request,
+                  'sklep/produkty/szczegoly.html',
+                  {'product': product,
+                   'koszyk_product_form': koszyk_produkt_form})
 
 class UserViewSet(viewsets.ModelViewSet):
     """
