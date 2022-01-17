@@ -1,20 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="805118e5-c182-4bee-bbb0-7b043354fac8" name="Changes" comment="Update wrocil URL i foto">
-      <change afterPath="$PROJECT_DIR$/media/products/2022/01/17/image.png" afterDir="false" />
+    <list default="true" id="805118e5-c182-4bee-bbb0-7b043354fac8" name="Changes" comment="Kolejne poprawki w kodzie">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/koszyk/templates/koszyk/szczegoly.html" beforeDir="false" afterPath="$PROJECT_DIR$/koszyk/templates/koszyk/szczegoly.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/koszyk/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/koszyk/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sklep/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/sklep/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sklep_internetowy/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/sklep_internetowy/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sklep_internetowy/static/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/sklep/static/css/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sklep_internetowy/static/css/pdf.css" beforeDir="false" afterPath="$PROJECT_DIR$/sklep/static/css/pdf.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sklep_internetowy/static/obrazy/brak_zdjecia.png" beforeDir="false" afterPath="$PROJECT_DIR$/sklep/static/obrazy/brak_zdjecia.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sklep_internetowy/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/sklep_internetowy/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zamowienia/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/zamowienia/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zamowienia/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/zamowienia/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koszyk/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/koszyk/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +54,7 @@
       <recent name="C:\Studia3\shop" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.urls">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="sklep_internetowy" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -87,6 +76,32 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="urls" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="sklep_internetowy" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/koszyk" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/koszyk/urls.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.urls" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -111,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642443996136</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Kolejne poprawki w kodzie">
+      <created>1642446613487</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1642446613487</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -132,6 +154,7 @@
     <MESSAGE value="Zaktualizowany projekt z poprawkami oraz z Mileny apka z zamowieniami" />
     <MESSAGE value="Update z html i poprawki" />
     <MESSAGE value="Update wrocil URL i foto" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update wrocil URL i foto" />
+    <MESSAGE value="Kolejne poprawki w kodzie" />
+    <option name="LAST_COMMIT_MESSAGE" value="Kolejne poprawki w kodzie" />
   </component>
 </project>
