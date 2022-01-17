@@ -15,14 +15,14 @@ def koszyk_add(request, product_id):
         koszyk.add(product=product,
                    quantity=cd['quantity'],
                    update_quantity=cd['update'])
-        return redirect('koszyk:koszyk_detail')
+        return redirect('koszyk:koszyk_wyswietl')
 
 def koszyk_remove(request, product_id):
     koszyk = Koszyk(request)
     product = get_object_or_404(Product, id=product_id)
     koszyk.remove(product)
-    return redirect('koszyk:koszyk_detail')
+    return redirect('koszyk:koszyk_wyswietl')
 
 def koszyk_wyswietl(request):
     koszyk = Koszyk(request)
-    return  render(request, 'koszyk/detail.html', {'koszyk':koszyk})
+    return  render(request, 'koszyk/szczegoly.html', {'koszyk':koszyk})
