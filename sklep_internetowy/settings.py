@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'sklep',
     #'sklep_internetowy',
     'koszyk.apps.KoszykConfig',
+    'zamowienia.apps.ZamowieniaConfig',
 ]
 
 MIDDLEWARE = [
