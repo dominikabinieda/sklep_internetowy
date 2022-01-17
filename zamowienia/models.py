@@ -3,15 +3,15 @@ from sklep_internetowy.sklep.models import Product
 
 
 class Zamowienia(models.Model):
-    first_name = models.CharField(max_length=50)
-    last_name = models.CharField(max_length=50)
+    imie = models.CharField(max_length=50)
+    nazwisko = models.CharField(max_length=50)
     email = models.EmailField()
-    address = models.CharField(max_length=250)
-    postal_code = models.CharField(max_length=20)
-    city = models.CharField(max_length=100)
-    created = models.DateTimeField(auto_now_add=True)
-    updated = models.DateTimeField(auto_now=True)
-    paid = models.BooleanField(default=False)
+    adres = models.CharField(max_length=250)
+    kod_pocztowy = models.CharField(max_length=20)
+    miasto = models.CharField(max_length=100)
+    utworzono = models.DateTimeField(auto_now_add=True)
+    zaktualizowano = models.DateTimeField(auto_now=True)
+    platnosc = models.BooleanField(default=False)
 
 
 class Meta:
