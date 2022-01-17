@@ -19,10 +19,10 @@ def order_create(request):
         koszyk.clear()
     # zmienna koszyk, jak nie działa to zmienić na plik koszyk
         return render(request,
-                      'orders/order/created.html',
+                      'zamowienia/zamowienie/utworzone.html',
                       {'order': order})
     else:
         form = OrderCreateForm()
     return render(request,
-                    'orders/order/create.html',
+                    'zamowienia/zamowienie/utworz.html',
                     {'koszyk': koszyk, 'form': form})
