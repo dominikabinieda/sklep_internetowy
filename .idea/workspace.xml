@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="805118e5-c182-4bee-bbb0-7b043354fac8" name="Changes" comment="Update z html i poprawki">
+      <change afterPath="$PROJECT_DIR$/zamowienia/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sklep/formatowanie/obrazy/brak_zdjecia.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sklep/templates/sklep/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/sklep/templates/sklep/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sklep_internetowy/formatowanie/obrazy/brak_zdjecia.png" beforeDir="false" afterPath="$PROJECT_DIR$/sklep_internetowy/formatowanie/obrazy/brak_zdjecia.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sklep_internetowy/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/sklep_internetowy/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zamowienia/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/zamowienia/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zamowienia/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sklep_internetowy/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/sklep_internetowy/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -25,7 +25,7 @@ from django.conf.urls.static import static
 # Wire up our API using automatic URL routing.
 # Additionally, we include login URLs for the browsable API.
 
-#app_name = 'sklep'
+app_name = 'sklep'
 
 urlpatterns = [
     path('admin/', admin.site.urls),
