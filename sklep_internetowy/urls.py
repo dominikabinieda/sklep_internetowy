@@ -30,8 +30,9 @@ app_name = 'sklep'
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('koszyk/', include('koszyk.urls', namespace='koszyk')),
-    path('', include('sklep.urls', namespace='sklep')), #cos tu nie teges
     path('zamowienia/', include('zamowienia.urls', namespace='zamowienia')),
+    path('', include('sklep.urls', namespace='sklep')), #cos tu nie teges
+
     #path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     #path('', views.product_list, name='product_list'),
     #path('<slug:category_slug>/', views.product_list(), name='product_list_by_category'), #usunac w razie w

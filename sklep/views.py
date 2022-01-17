@@ -3,7 +3,7 @@
 #from rest_framework import permissions
 from django.shortcuts import render, get_object_or_404
 from .models import Category, Product
-from koszyk.forms import KoszykAddProductForm #Dodanie produktu do koszyka na zakupy
+from koszyk.forms import KoszykAddProductForm  # Dodanie produktu do koszyka na zakupy
 
 
 def product_list(request, category_slug=None):
@@ -19,12 +19,14 @@ def product_list(request, category_slug=None):
                    'categories': categories,
                    'products': products})
 
-#Dodanie produktu do koszyka na zakupy
+
+# Dodanie produktu do koszyka na zakupy
 def product_detail(request, id, slug):
-    product = get_object_or_404(Product, id = id,
+    product = get_object_or_404(Product, id=id,
                                 slug=slug,
                                 available=True)
     koszyk_produkt_form = KoszykAddProductForm()
+
     return render(request,
                   'sklep/produkty/szczegoly.html',
                   {'product': product,
