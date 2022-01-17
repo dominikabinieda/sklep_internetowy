@@ -29,4 +29,8 @@ def koszyk_wyswietl(request):
     for item in koszyk:
         item['update_quantity_form'] = KoszykAddProductForm(initial={'quantity': item['quantity'],
                                                                      'update': True}) #usunac w razie w , bo brak reszty do tego
+<<<<<<< HEAD
     return render(request, 'koszyk/szczegoly.html', {'koszyk': koszyk})
+=======
+    return render(request, 'koszyk/szczegoly.html', {'koszyk':koszyk})
+>>>>>>> origin/master
