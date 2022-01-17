@@ -16,6 +16,7 @@ def koszyk_add(request, product_id):
                    quantity=cd['quantity'],
                    update_quantity=cd['update'])
         return redirect('koszyk:koszyk_wyswietl')
+
 @require_POST
 def koszyk_remove(request, product_id):
     koszyk = Koszyk(request)
@@ -28,4 +29,4 @@ def koszyk_wyswietl(request):
     for item in koszyk:
         item['update_quantity_form'] = KoszykAddProductForm(initial={'quantity': item['quantity'],
                                                                      'update': True}) #usunac w razie w , bo brak reszty do tego
-    return  render(request, 'koszyk/szczegoly.html', {'koszyk':koszyk})
+    return render(request, 'koszyk/szczegoly.html', {'koszyk':koszyk})
