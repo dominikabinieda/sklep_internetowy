@@ -35,7 +35,8 @@ urlpatterns = [
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     path('', views.product_list, name='product_list'),
     path('admin/', admin.site.urls),
-    path('koszyk/', include('koszyk.urls', namespace='koszyk'))
+    path('koszyk/', include('koszyk.urls', namespace='koszyk')),
+    path('zamowienia/', include('zamowienia.urls', namespace='zamowienia')),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL,
