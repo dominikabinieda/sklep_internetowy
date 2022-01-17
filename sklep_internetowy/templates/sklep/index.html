@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>{% block title %}Mój sklep{% endblock %}</title>
-    <link href="{% static "css/base.css" %}" rel="stylesheet">
+    <link href="{%static "css/base.css" %}" rel="stylesheet">
 </head>
 <body>
 <div id="header">
@@ -14,7 +14,7 @@
     <div class="koszyk">
         {% with total_items=cart|length %}
           {% if total_items > 0 %}
-            Your cart:
+            Twój koszyk:
             <a href="{% url "koszyk:koszyk_wyswietl" %}">
               {{ total_items }} item{{ total_items|pluralize }},
               ${{ cart.get_total_price }}
