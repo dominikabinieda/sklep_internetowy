@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="805118e5-c182-4bee-bbb0-7b043354fac8" name="Changes" comment="To już pobierzcie :)&#10;Małe poprawki i strona sklepu działa!&#10;Zmiany głównie w HTML'u oraz views.">
-      <change afterPath="$PROJECT_DIR$/sklep/migrations/0002_alter_category_options.py" afterDir="false" />
+    <list default="true" id="805118e5-c182-4bee-bbb0-7b043354fac8" name="Changes" comment="Wersja stabilna -zaktualiznowana, z migracjami">
+      <change afterPath="$PROJECT_DIR$/media/products/2022/01/17/k1_ZxyQyNy.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_17_01_2022_01_57__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_17_01_2022_01_57__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_17_01_2022_01_58__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_17_01_2022_01_58__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_17_01_2022_02_00__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_17_01_2022_02_00__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_17_01_2022_17_59__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_17_01_2022_17_59__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_17_01_2022_01_40__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_17_01_2022_01_40__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_17_01_2022_02_01__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_17_01_2022_02_01__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sklep_internetowy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sklep_internetowy.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zamowienia/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/zamowienia/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koszyk/koszyk.py" beforeDir="false" afterPath="$PROJECT_DIR$/koszyk/koszyk.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koszyk/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/koszyk/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sklep/templates/sklep/produkty/szczegoly.html" beforeDir="false" afterPath="$PROJECT_DIR$/sklep/templates/sklep/produkty/szczegoly.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,9 +28,6 @@
       </list>
     </option>
   </component>
-  <component name="Git.Merge.Settings">
-    <option name="BRANCH" value="Adi-branch" />
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -35,14 +35,6 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GitSEFilterConfiguration">
-    <file-type-list>
-      <filtered-out-file-type name="LOCAL_BRANCH" />
-      <filtered-out-file-type name="REMOTE_BRANCH" />
-      <filtered-out-file-type name="TAG" />
-      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
-    </file-type-list>
   </component>
   <component name="ProjectId" id="23fCUgx2nfsN3Q4mC6R8qdg7zNc" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -56,16 +48,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../myshop" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\AAAstudia\UMCS\V_semestr\Tworzenie_i_zarzadzanie_serwisami_inter\sklep_internetowy\sklep" />
-      <recent name="D:\AAAstudia\UMCS\V_semestr\Tworzenie_i_zarzadzanie_serwisami_inter\sklep_internetowy\sklep_internetowy" />
-      <recent name="C:\Studia3\shop\sklep" />
-      <recent name="C:\Studia3\shop" />
-    </key>
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../materialy/Nowy folder/Django-3-by-Example-master/Chapter07/myshop" />
   </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
@@ -99,28 +82,21 @@
       <option name="presentableId" value="Default" />
       <updated>1642115772541</updated>
     </task>
-    <task id="LOCAL-00001" summary="Zaktualizowany projekt z poprawkami oraz z Mileny apka z zamowieniami">
-      <created>1642440061547</created>
+    <task id="LOCAL-00001" summary="nothing">
+      <created>1642451522375</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1642440061547</updated>
+      <updated>1642451522375</updated>
     </task>
-    <task id="LOCAL-00002" summary="Update wrocil URL i foto">
-      <created>1642443996136</created>
+    <task id="LOCAL-00002" summary="Wersja stabilna -zaktualiznowana, z migracjami">
+      <created>1642451766503</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1642443996136</updated>
+      <updated>1642451766503</updated>
     </task>
-    <task id="LOCAL-00003" summary="To już pobierzcie :)&#10;Małe poprawki i strona sklepu działa!&#10;Zmiany głównie w HTML'u oraz views.">
-      <created>1642450989273</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1642450989273</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -138,10 +114,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Zaczynamy nasz projekt!" />
-    <MESSAGE value="Zaktualizowany projekt z poprawkami oraz z Mileny apka z zamowieniami" />
-    <MESSAGE value="Update z html i poprawki" />
-    <MESSAGE value="Update wrocil URL i foto" />
-    <MESSAGE value="To już pobierzcie :)&#10;Małe poprawki i strona sklepu działa!&#10;Zmiany głównie w HTML'u oraz views." />
-    <option name="LAST_COMMIT_MESSAGE" value="To już pobierzcie :)&#10;Małe poprawki i strona sklepu działa!&#10;Zmiany głównie w HTML'u oraz views." />
+    <MESSAGE value="nothing" />
+    <MESSAGE value="Wersja stabilna -zaktualiznowana, z migracjami" />
+    <option name="LAST_COMMIT_MESSAGE" value="Wersja stabilna -zaktualiznowana, z migracjami" />
   </component>
 </project>
