@@ -12,12 +12,12 @@
 </div>
 <div id="subheader">
     <div class="koszyk">
-        {% with total_items=cart|length %}
+        {% with total_items=koszyk|length %}
           {% if total_items > 0 %}
             Twój koszyk:
             <a href="{% url "koszyk:koszyk_wyswietl" %}">
-              {{ total_items }} item{{ total_items|pluralize }},
-              ${{ cart.get_total_price }}
+              {{ total_items }} przedmiot{{ total_items|pluralize:'y' }},
+              {{ koszyk.get_total_price }} PLN
             </a>
           {% else %}
             Twój koszyk jest pusty.

@@ -10,7 +10,7 @@
     <h3>Kategorie</h3>
     <ul>
       <li {% if not category %}class="selected"{% endif %}>
-        <a href="{% url "sklep:product_list" %}">Wszystkie</a>
+        <a href="{% url "sklep:product_list" %}">Wszystkie</a> <!-- cos pozmieniac -->
       </li>
       {% for c in categories %}
         <li {% if category.slug == c.slug %}class="selected"{% endif %}>

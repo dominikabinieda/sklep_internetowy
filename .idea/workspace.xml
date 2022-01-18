@@ -4,9 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="805118e5-c182-4bee-bbb0-7b043354fac8" name="Changes" comment="oj tam">
+    <list default="true" id="805118e5-c182-4bee-bbb0-7b043354fac8" name="Changes" comment="index/1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sklep_internetowy/templates/sklep/produkty/szczegoly.html" beforeDir="false" afterPath="$PROJECT_DIR$/sklep_internetowy/templates/sklep/produkty/szczegoly.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koszyk/koszyk.py" beforeDir="false" afterPath="$PROJECT_DIR$/koszyk/koszyk.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koszyk/templates/koszyk/szczegoly.html" beforeDir="false" afterPath="$PROJECT_DIR$/koszyk/templates/koszyk/szczegoly.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koszyk/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/koszyk/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sklep/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/sklep/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sklep/templates/sklep/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/sklep/templates/sklep/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sklep/templates/sklep/produkty/lista.html" beforeDir="false" afterPath="$PROJECT_DIR$/sklep/templates/sklep/produkty/lista.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sklep/templates/sklep/produkty/szczegoly.html" beforeDir="false" afterPath="$PROJECT_DIR$/sklep/templates/sklep/produkty/szczegoly.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sklep_internetowy/formatowanie/obrazy/brak_zdjecia.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sklep_internetowy/sklep/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sklep_internetowy/sklep/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sklep_internetowy/sklep/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sklep_internetowy/sklep/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sklep_internetowy/sklep/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sklep_internetowy/sklep/serializers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sklep_internetowy/sklep/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sklep_internetowy/sklep/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sklep_internetowy/templates/sklep/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sklep_internetowy/templates/sklep/produkty/lista.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sklep_internetowy/templates/sklep/produkty/szczegoly.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zamowienia/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/zamowienia/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zamowienia/templates/zamowienia/zamowienie/utworz.html" beforeDir="false" afterPath="$PROJECT_DIR$/zamowienia/templates/zamowienia/zamowienie/utworz.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642455887231</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="index/1">
+      <created>1642456607135</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1642456607135</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -127,6 +155,7 @@
     <MESSAGE value="Wersja stabilna -zaktualiznowana, z migracjami" />
     <MESSAGE value="Dodanie dwóch produktów do sklepu" />
     <MESSAGE value="oj tam" />
-    <option name="LAST_COMMIT_MESSAGE" value="oj tam" />
+    <MESSAGE value="index/1" />
+    <option name="LAST_COMMIT_MESSAGE" value="index/1" />
   </component>
 </project>
