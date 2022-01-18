@@ -47,10 +47,10 @@ class Koszyk(object):
         if product_id not in self.koszyk:
             self.koszyk[product_id] = {'quantity': 0,
                                      'price': str(product.price)}
-        if override_quantity: #tu tez
-            self.koszyk[product_id]['quantity'] = quantity
+        #if override_quantity: #tu tez
+        #    self.koszyk[product_id]['quantity'] = quantity
         else:
-            self.koszyk[product_id]['quantity'] += quantity
+            self.koszyk[product_id]['quantity'] = quantity
         self.save()
 
     def save(self):
