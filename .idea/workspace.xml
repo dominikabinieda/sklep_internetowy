@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="805118e5-c182-4bee-bbb0-7b043354fac8" name="Changes" comment="oj tam">
+    <list default="true" id="805118e5-c182-4bee-bbb0-7b043354fac8" name="Changes" comment="noweee foto foto">
+      <change afterPath="$PROJECT_DIR$/zamowienia/migrations/0002_alter_zamowienia_options.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sklep/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/sklep/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koszyk/koszyk.py" beforeDir="false" afterPath="$PROJECT_DIR$/koszyk/koszyk.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sklep/templates/sklep/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/sklep/templates/sklep/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sklep/templates/sklep/produkty/lista.html" beforeDir="false" afterPath="$PROJECT_DIR$/sklep/templates/sklep/produkty/lista.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +45,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../materialy/Nowy folder/Django-3-by-Example-master/Chapter07/myshop" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
@@ -105,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642455887231</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="noweee foto foto">
+      <created>1642502643111</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1642502643111</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -127,6 +139,7 @@
     <MESSAGE value="Wersja stabilna -zaktualiznowana, z migracjami" />
     <MESSAGE value="Dodanie dwóch produktów do sklepu" />
     <MESSAGE value="oj tam" />
-    <option name="LAST_COMMIT_MESSAGE" value="oj tam" />
+    <MESSAGE value="noweee foto foto" />
+    <option name="LAST_COMMIT_MESSAGE" value="noweee foto foto" />
   </component>
 </project>
