@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 {% extends "sklep/index.html" %}
-=======
-{% extends "sklep.index.html" %}
->>>>>>> origin/master
 {% load static %}
 
 {% block title %}
@@ -20,7 +16,7 @@
         {{ product.category }}
       </a>
     </h2>
-    <p class="price">${{ product.price }}</p>
+    <p class="price">{{ product.price }} PLN</p>
     <form action="{% url "koszyk:koszyk_add" product.id %}" method="post">
       {{ koszyk_product_form }}
       {% csrf_token %}
