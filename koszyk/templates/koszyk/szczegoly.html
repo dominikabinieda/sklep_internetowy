@@ -19,7 +19,7 @@
       </tr>
     </thead>
     <tbody>
-      {% for item in cart %}
+      {% for item in koszyk %}
         {% with product=item.product %}
           <tr>
             <td>
@@ -33,31 +33,38 @@
               <form action="{% url "koszyk:koszyk_add" product.id %}" method="post">
                 {{ item.update_quantity_form.quantity }}
                 {{ item.update_quantity_form.override }}
-                <input type="submit" value="Update">
+                <input type="submit" value="Zmień">
                 {% csrf_token %}
               </form>
             </td>
             <td>
               <form action="{% url "koszyk:koszyk_remove" product.id %}" method="post">
-                <input type="submit" value="Remove">
+                <input type="submit" value="Usuń">
                 {% csrf_token %}
               </form>
             </td>
-            <td class="num">${{ item.price }}</td>
-            <td class="num">${{ item.total_price }}</td>
+            <td class="num">PLN {{ item.price }}</td>
+            <td class="num">PLN {{ item.total_price }}</td>
           </tr>
         {% endwith %}
       {% endfor %}
       <tr class="total">
         <td>Łącznie</td>
         <td colspan="4"></td>
-        <td class="num">PLN{{ cart.get_total_price }}</td>
+        <td class="num">{{ koszyk.get_total_price }}PLN</td>
       </tr>
     </tbody>
   </table>
   <p class="text-right">
+<<<<<<< HEAD
     <a href="{% url "zamowienia:order_create" %}" class="button">
       Checkout
+=======
+    <a href="{% url "sklep:product_list" %}" class="button
+    light">Kontynuuj zakupy</a>
+    <a href="{% url "zamowienia:order_create" %}" class="button">
+      Złóż zamówienie
+>>>>>>> master
     </a>
   </p>
 {% endblock %}

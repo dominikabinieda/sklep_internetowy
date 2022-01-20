@@ -1,6 +1,6 @@
 from decimal import Decimal
 from django.conf import settings
-from sklep_internetowy.sklep.models import Product
+from sklep.models import Product
 
 
 class Koszyk(object):
@@ -29,17 +29,17 @@ class Koszyk(object):
 
         for item in koszyk.values():
             item['price'] = Decimal(item['price'])
-            item['total_price'] = item['item'] * item['quantity']
+            item['total_price'] = item['price'] * item['quantity']
             yield item
 
     def __len__(self):
         """
         Obliczenie liczby wszystkich elementów w koszyku na zakupy.
         """
-        return sum(item['quantinty'] for item in self.koszyk.values())
+        return sum(item['quantity'] for item in self.koszyk.values())
 
 
-    def add(self, product, quantity=1, update_quantity=False): #lub ovveride_quantity
+    def add(self, product, quantity=1, override_quantity=False): #lub ovveride_quantity
         """
         Dodanie produktu do koszyka lub zmiana jego ilości.
         """
@@ -47,10 +47,10 @@ class Koszyk(object):
         if product_id not in self.koszyk:
             self.koszyk[product_id] = {'quantity': 0,
                                      'price': str(product.price)}
-        if update_quantity: #tu tez
+        if override_quantity: #tu tez
             self.koszyk[product_id]['quantity'] = quantity
         else:
-            self.koszyk[product_id]['quantity'] += quantity
+            self.koszyk[product_id]['quantity'] = quantity
         self.save()
 
     def save(self):

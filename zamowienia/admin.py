@@ -6,7 +6,11 @@ class OrderItemInline(admin.TabularInline):
     model = OrderItem
     raw_id_fields = ['product']
 
+<<<<<<< HEAD
 
+=======
+@admin.register(Zamowienia)
+>>>>>>> master
 class OrderAdmin(admin.ModelAdmin):
     list_display = ['id', 'imie', 'nazwisko', 'email',
                     'adres', 'kod_pocztowy', 'miasto', 'platnosc',
@@ -15,4 +19,9 @@ class OrderAdmin(admin.ModelAdmin):
     inlines = [OrderItemInline]
 
 
+<<<<<<< HEAD
 admin.site.register(Zamowienia, OrderAdmin)
+=======
+
+#admin.site.register(Zamowienia, OrderAdmin)
+>>>>>>> master

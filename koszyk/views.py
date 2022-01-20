@@ -1,8 +1,8 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.views.decorators.http import require_POST
 from koszyk.forms import KoszykAddProductForm
-from koszyk.koszyk import Koszyk
-from sklep_internetowy.sklep.models import Product
+from .koszyk import Koszyk
+from sklep.models import Product
 
 
 @require_POST
@@ -14,8 +14,9 @@ def koszyk_add(request, product_id):
         cd = form.cleaned_data
         koszyk.add(product=product,
                    quantity=cd['quantity'],
-                   update_quantity=cd['update'])
+                   override_quantity=cd['update']) #lub update_quantity
         return redirect('koszyk:koszyk_wyswietl')
+
 @require_POST
 def koszyk_remove(request, product_id):
     koszyk = Koszyk(request)
@@ -27,5 +28,5 @@ def koszyk_wyswietl(request):
     koszyk = Koszyk(request)
     for item in koszyk:
         item['update_quantity_form'] = KoszykAddProductForm(initial={'quantity': item['quantity'],
-                                                                     'update': True}) #usunac w razie w , bo brak reszty do tego
-    return  render(request, 'koszyk/szczegoly.html', {'koszyk':koszyk})
+                                                                     'override': True}) #usunac w razie w , bo brak reszty do tego
+    return render(request, 'koszyk/szczegoly.html', {'koszyk':koszyk})
