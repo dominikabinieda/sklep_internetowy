@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     'sklep_internetowy',
     'koszyk.apps.KoszykConfig',
     'zamowienia.apps.ZamowieniaConfig',
+    'django_celery_beat',
+    'django_celery_results',
 ]
 
 MIDDLEWARE = [
@@ -138,3 +140,9 @@ KOSZYK_SESSION_ID = 'koszyk'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+
+
+CELERY_RESULT_BACKEND = "django-db"
+
+CELERY_BROKER_URL = 'redis://redis:6379/0'
+CELERY_RESULT_BACKEND = 'redis://redis:6379/0'
