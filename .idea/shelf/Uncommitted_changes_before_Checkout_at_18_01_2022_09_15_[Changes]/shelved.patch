@@ -1,0 +1,78 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -1,5 +1,8 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
++  <component name="AutoImportSettings">
++    <option name="autoReloadType" value="SELECTIVE" />
++  </component>
+   <component name="ChangeListManager">
+     <list default="true" id="805118e5-c182-4bee-bbb0-7b043354fac8" name="Changes" comment="Zaczynamy nasz projekt!">
+       <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+@@ -8,7 +11,6 @@
+       <change afterPath="$PROJECT_DIR$/.idea/sklep_internetowy.iml" afterDir="false" />
+       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+       <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+       <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/Django-4.0.1.dist-info/AUTHORS" afterDir="false" />
+       <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/Django-4.0.1.dist-info/INSTALLER" afterDir="false" />
+       <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/Django-4.0.1.dist-info/LICENSE" afterDir="false" />
+@@ -5724,7 +5726,6 @@
+       <change afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
+       <change afterPath="$PROJECT_DIR$/sklep_internetowy/__init__.py" afterDir="false" />
+       <change afterPath="$PROJECT_DIR$/sklep_internetowy/asgi.py" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/sklep_internetowy/settings.py" afterDir="false" />
+       <change afterPath="$PROJECT_DIR$/sklep_internetowy/sklep/__init__.py" afterDir="false" />
+       <change afterPath="$PROJECT_DIR$/sklep_internetowy/sklep/admin.py" afterDir="false" />
+       <change afterPath="$PROJECT_DIR$/sklep_internetowy/sklep/apps.py" afterDir="false" />
+@@ -5733,7 +5734,6 @@
+       <change afterPath="$PROJECT_DIR$/sklep_internetowy/sklep/serializers.py" afterDir="false" />
+       <change afterPath="$PROJECT_DIR$/sklep_internetowy/sklep/tests.py" afterDir="false" />
+       <change afterPath="$PROJECT_DIR$/sklep_internetowy/sklep/views.py" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/sklep_internetowy/urls.py" afterDir="false" />
+       <change afterPath="$PROJECT_DIR$/sklep_internetowy/wsgi.py" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+@@ -5749,10 +5749,17 @@
+     </option>
+   </component>
+   <component name="Git.Settings">
++    <option name="RECENT_BRANCH_BY_REPOSITORY">
++      <map>
++        <entry key="$PROJECT_DIR$" value="master" />
++      </map>
++    </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
+   <component name="ProjectId" id="23fCUgx2nfsN3Q4mC6R8qdg7zNc" />
+-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
++  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
++    <ConfirmationsSetting value="2" id="Add" />
++  </component>
+   <component name="ProjectViewState">
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+@@ -5786,6 +5793,9 @@
+     </configuration>
+   </component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
++  <component name="SvnConfiguration">
++    <configuration />
++  </component>
+   <component name="TaskManager">
+     <task active="true" id="Default" summary="Default task">
+       <changelist id="805118e5-c182-4bee-bbb0-7b043354fac8" name="Changes" comment="" />
+@@ -5806,6 +5816,7 @@
+         </entry>
+       </map>
+     </option>
++    <option name="oldMeFiltersMigrated" value="true" />
+   </component>
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="Zaczynamy nasz projekt!" />
