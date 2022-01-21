@@ -15,4 +15,8 @@ class OrderAdmin(admin.ModelAdmin):
     inlines = [OrderItemInline]
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
 #admin.site.register(Zamowienia, OrderAdmin)

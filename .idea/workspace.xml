@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="805118e5-c182-4bee-bbb0-7b043354fac8" name="Changes" comment="Kolejne poprawki w kodzie" />
+=======
+    <list default="true" id="805118e5-c182-4bee-bbb0-7b043354fac8" name="Changes" comment="Dodanie dwóch produktów do sklepu">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+    </list>
+>>>>>>> origin/master
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,7 +27,11 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
+<<<<<<< HEAD
         <entry key="$PROJECT_DIR$" value="master" />
+=======
+        <entry key="$PROJECT_DIR$" value="Milena_branch" />
+>>>>>>> origin/master
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -101,6 +115,9 @@
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="805118e5-c182-4bee-bbb0-7b043354fac8" name="Changes" comment="" />
@@ -109,6 +126,7 @@
       <option name="presentableId" value="Default" />
       <updated>1642115772541</updated>
     </task>
+<<<<<<< HEAD
     <task id="LOCAL-00001" summary="Zaktualizowany projekt z poprawkami oraz z Mileny apka z zamowieniami">
       <created>1642440061547</created>
       <option name="number" value="00001" />
@@ -138,6 +156,44 @@
       <updated>1642451029936</updated>
     </task>
     <option name="localTasksCounter" value="5" />
+=======
+    <task id="LOCAL-00001" summary="nothing">
+      <created>1642451522375</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1642451522375</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Wersja stabilna -zaktualiznowana, z migracjami">
+      <created>1642451766503</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1642451766503</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Dodanie dwóch produktów do sklepu">
+      <created>1642453556483</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1642453556483</updated>
+    </task>
+    <task id="LOCAL-00004" summary="oj tam">
+      <created>1642455887231</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1642455887231</updated>
+    </task>
+    <task id="LOCAL-00005" summary="index/1">
+      <created>1642456607135</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1642456607135</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+>>>>>>> origin/master
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -155,10 +211,19 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Zaczynamy nasz projekt!" />
+<<<<<<< HEAD
     <MESSAGE value="Zaktualizowany projekt z poprawkami oraz z Mileny apka z zamowieniami" />
     <MESSAGE value="Update z html i poprawki" />
     <MESSAGE value="Update wrocil URL i foto" />
     <MESSAGE value="Kolejne poprawki w kodzie" />
     <option name="LAST_COMMIT_MESSAGE" value="Kolejne poprawki w kodzie" />
+=======
+    <MESSAGE value="nothing" />
+    <MESSAGE value="Wersja stabilna -zaktualiznowana, z migracjami" />
+    <MESSAGE value="Dodanie dwóch produktów do sklepu" />
+    <MESSAGE value="oj tam" />
+    <MESSAGE value="index/1" />
+    <option name="LAST_COMMIT_MESSAGE" value="index/1" />
+>>>>>>> origin/master
   </component>
 </project>

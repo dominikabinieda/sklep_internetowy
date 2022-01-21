@@ -1,6 +1,7 @@
 from django.db import models
 from django.urls import reverse
 
+
 class Category(models.Model):
     name = models.CharField(max_length=200,
                             db_index=True)
@@ -44,4 +45,8 @@ class Product(models.Model):
 
     def get_absolute_url(self):
         return reverse('sklep:product_detail',
+<<<<<<< HEAD:sklep/models.py
                        args=[self.id, self.slug])
+=======
+                       args=[self.id, self.slug])
+>>>>>>> origin/master:sklep_internetowy/sklep/models.py

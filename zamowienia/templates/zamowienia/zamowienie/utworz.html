@@ -1,15 +1,24 @@
 {% extends "sklep/index.html" %}
 
 {% block title %}
+<<<<<<< HEAD
   Checkout
 {% endblock %}
 
 {% block content %}
   <h1>Checkout</h1>
+=======
+  Podsumowanie zakupu
+{% endblock %}
+
+{% block content %}
+  <h1>Podsumowanie:</h1>
+>>>>>>> origin/master
 
   <div class="order-info">
     <h3>Twoje zamówienie</h3>
     <ul>
+<<<<<<< HEAD
       {% for item in cart %}
         <li>
           {{ item.quantity }}x {{ item.product.name }}
@@ -18,11 +27,25 @@
       {% endfor %}
     </ul>
     <p>Suma: ${{ cart.get_total_price }}</p>
+=======
+      {% for item in koszyk %}
+        <li>
+          {{ item.quantity }}x {{ item.product.name }}
+          <span>{{ item.total_price }} PLN</span>
+        </li>
+      {% endfor %}
+    </ul>
+    <p>Suma: {{ koszyk.get_total_price }} PLN</p>
+>>>>>>> origin/master
   </div>
 
   <form method="post" class="order-form">
     {{ form.as_p }}
+<<<<<<< HEAD
     <p><input type="submit" value="Place order"></p>
+=======
+    <p><input type="submit" value="Złóż zamówienie"></p>
+>>>>>>> origin/master
     {% csrf_token %}
   </form>
 {% endblock %}
