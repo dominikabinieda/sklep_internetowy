@@ -17,7 +17,7 @@ class Zamowienia(models.Model):
         ordering = ('-id',)
 
     def __str__(self):
-        return f'Order {self.id}'
+        return 'fOrder {self.id}'
 
     def get_total_cost(self):
         return sum(item.get_cost() for item in self.items.all())

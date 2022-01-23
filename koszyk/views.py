@@ -15,7 +15,7 @@ def koszyk_add(request, product_id):
         koszyk.add(product=product,
                    quantity=cd['quantity'],
                    override_quantity=cd['update']) #lub update_quantity
-        return redirect('koszyk:koszyk_wyswietl')
+    return redirect('koszyk:koszyk_wyswietl')
 
 @require_POST
 def koszyk_remove(request, product_id):
