@@ -2,6 +2,7 @@ from django.shortcuts import render
 from .models import OrderItem
 from .forms import OrderCreateForm
 from koszyk.koszyk import Koszyk
+from .task import order_created
 
 
 def order_create(request):
@@ -18,7 +19,7 @@ def order_create(request):
             # Usunięcie zawartości koszyka na zakupy.
             koszyk.clear()
             # zmienna koszyk, jak nie działa to zmienić na plik koszyk
-            #order_created.delay(order.id)
+            order_created.delay(order.id)
             return render(request,
                           'zamowienia/zamowienie/utworzone.html',
                           {'order': order})
