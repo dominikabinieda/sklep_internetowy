@@ -8,11 +8,12 @@ body {
 
 h1, h2, h3, h4, h5 , h6 {
     font-family: 'Ubuntu', sans-serif; font-weight:normal;
+    font-style: italic;
 }
 
 a {
     text-decoration:none;
-    color:#5993bb;
+    color:#006400;
 }
 
 a:hover {
@@ -21,7 +22,7 @@ a:hover {
 
 a.button, input[type="submit"] {
     color:#fff;
-    background:#5993bb;
+    background:#006400;
     border-radius:4px;
     padding:10px 20px;
     font-size:14px;
@@ -63,16 +64,16 @@ tbody tr.subtotal {
 }
 
 thead th, tbody tr.total {
-    background:#5993bb;
+    background:#006400;
     color:#fff;
     font-weight:bold;
 }
 
-table.cart {
+table.koszyk {
     margin-bottom:40px;
 }
 
-table.cart img {
+table.koszyk img {
     width:180px;
 }
 
@@ -132,12 +133,12 @@ ul.errorlist {
 #header .logo {
     font-family: 'Ubuntu', sans-serif;
     float:left;
-    color:#333;
+    color:#000000;
     font-size:22px;
     margin-right:10%;
 }
 
-#subheader .cart {
+#subheader .koszyk {
     float:right;
     padding-top:4px;
 }
@@ -169,7 +170,7 @@ ul.errorlist {
 }
 
 #sidebar ul li.selected {
-    background:#5993bb;
+    background:#006400;
     border-radius:4px;
 }
 
@@ -231,11 +232,11 @@ ul.errorlist {
     background:#efefef;
     padding:10px 20px;
     color:#333;
-    border-bottom:4px solid #5993bb;
+    border-bottom:4px solid #006400;
 }
 
 .order-info h3 {
-    color:#5993bb;
+    color:#006400;
 }
 
 .order-info ul li {
@@ -297,21 +298,21 @@ ul.errorlist {
     clear:both;
 }
 
-.recommendations.cart {
+.recommendations.koszyk {
     width:60%;
     float:left;
     overflow:auto;
 }
 
-.recommendations.cart h3 {
+.recommendations.koszyk h3 {
     margin-top:0;
 }
 
-.recommendations.cart .item {
+.recommendations.koszyk .item {
     margin-right:10px;
 }
 
-.recommendations.cart img {
+.recommendations.koszyk img {
     width:120px;
 }
 
