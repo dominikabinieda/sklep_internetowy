@@ -1,13 +1,13 @@
-@import url(//fonts.googleapis.com/css2?family=Roboto+Slab);
+@import url(//fonts.googleapis.com/css?family=Ubuntu);
 
 body {
     margin:0;
     padding:0;
-    font-family:'Roboto Slab', helvetica, sans-serif;
+    font-family:helvetica, sans-serif;
 }
 
 h1, h2, h3, h4, h5 , h6 {
-    font-family: 'Roboto Slab', sans-serif; font-weight:normal;
+    font-family: 'Ubuntu', sans-serif; font-weight:normal;
 }
 
 a {
@@ -121,7 +121,7 @@ form p input {
 }
 
 #header .logo {
-    font-family: 'Roboto Slab', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     float:left;
     color:#333;
     font-size:22px;
