@@ -139,8 +139,3 @@ KOSZYK_SESSION_ID = 'koszyk'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
-
-
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-
-BROKER_URL = 'amqp://guest:guest@localhost:5672/'
