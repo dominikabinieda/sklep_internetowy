@@ -43,7 +43,6 @@ INSTALLED_APPS = [
     'sklep_internetowy',
     'koszyk.apps.KoszykConfig',
     'zamowienia.apps.ZamowieniaConfig',
-    'celery',
 ]
 
 MIDDLEWARE = [
@@ -140,11 +139,11 @@ KOSZYK_SESSION_ID = 'koszyk'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
-CELERY_BROKER_URL = 'redis://localhost:6379'
-CELERY_RESULT_BACKEND = 'redis://localhost:6379'
+#CELERY_BROKER_URL = 'redis://localhost:6379'
+#CELERY_RESULT_BACKEND = 'redis://localhost:6379'
 
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+#EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
-CELERY_BROKER_URL = 'amqp://guest:guest@localhost:5672//'
+#CELERY_BROKER_URL = 'amqp://guest:guest@localhost:5672//'
 
 

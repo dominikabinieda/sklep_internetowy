@@ -132,6 +132,9 @@
       <change beforePath="$PROJECT_DIR$/sklep_internetowy/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/sklep_internetowy/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sklep_internetowy/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/sklep_internetowy/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/zamowienia/task.py" beforeDir="false" />
+<<<<<<< HEAD
+>>>>>>> parent of 821a05b (koszyk jako model - usuniecie pliku koszyk/koszyk.py i stworzenie koszyka w models.py + zmiana sciezek w pozostalych laczacych plikach)
+=======
 >>>>>>> parent of 821a05b (koszyk jako model - usuniecie pliku koszyk/koszyk.py i stworzenie koszyka w models.py + zmiana sciezek w pozostalych laczacych plikach)
       <change beforePath="$PROJECT_DIR$/zamowienia/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/zamowienia/views.py" afterDir="false" />
     </list>
