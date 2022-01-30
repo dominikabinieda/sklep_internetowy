@@ -1,8 +1,12 @@
 from django.shortcuts import render
 from .models import OrderItem
 from .forms import OrderCreateForm
+<<<<<<< HEAD
 from koszyk.models import Koszyk
 from .tasks import order_created
+=======
+from koszyk.koszyk import Koszyk
+>>>>>>> parent of 821a05b (koszyk jako model - usuniecie pliku koszyk/koszyk.py i stworzenie koszyka w models.py + zmiana sciezek w pozostalych laczacych plikach)
 
 def order_create(request):
     koszyk = Koszyk(request)

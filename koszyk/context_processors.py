@@ -1,4 +1,4 @@
-from .models import Koszyk
+from .koszyk import Koszyk
 
 def koszyk(request):
     return {'koszyk': Koszyk(request)}
