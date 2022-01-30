@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from .models import OrderItem
 from .forms import OrderCreateForm
-from koszyk.koszyk import Koszyk
+from koszyk.models import Koszyk
 
 def order_create(request):
     koszyk = Koszyk(request)
