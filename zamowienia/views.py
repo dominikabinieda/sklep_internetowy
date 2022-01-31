@@ -1,7 +1,13 @@
-from django.shortcuts import render
 from .models import OrderItem
 from .forms import OrderCreateForm
-from koszyk.koszyk import Koszyk
+from koszyk.models import Koszyk
+
+from django.contrib import messages
+from django.core.mail import send_mail
+from django.shortcuts import render, redirect
+from django.conf import settings
+from django.urls import reverse
+
 
 
 def order_create(request):
@@ -19,6 +25,16 @@ def order_create(request):
             koszyk.clear()
             # zmienna koszyk, jak nie działa to zmienić na plik koszyk
             #order_created.delay(order.id)
+            if form.is_valid():
+                subject = 'Twoje zamówienie zostało złożone'
+                message = 'Dziękujemy za Twoje zamówienie w naszym sklepie.'
+                recipient = form.cleaned_data.get('email')
+                send_mail(subject,
+                          message,
+                          settings.EMAIL_HOST_USER,
+                          [recipient],
+                          fail_silently=False)
+                messages.success(request, 'Success!')
             return render(request,
                           'zamowienia/zamowienie/utworzone.html',
                           {'order': order})

@@ -6,3 +6,7 @@ class OrderCreateForm(forms.ModelForm):
         model = Zamowienia
         fields = ['imie', 'nazwisko', 'email',
                      'adres', 'kod_pocztowy', 'miasto']
+
+#admin.site.register(Zamowienia, OrderAdmin)
+class SubscribeForm(forms.Form):
+    email = forms.EmailField()

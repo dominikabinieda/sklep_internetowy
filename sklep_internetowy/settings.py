@@ -26,7 +26,13 @@ SECRET_KEY = 'django-insecure-=cht5m=fs)4l%491hw70*8+347nigqw7i1n(-9erm)rt7qg2po
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1']
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'djangotestgangusy@gmail.com'
+EMAIL_HOST_PASSWORD = 'zkqjztortlqozeol'
 
 
 # Application definition
@@ -43,6 +49,7 @@ INSTALLED_APPS = [
     'sklep_internetowy',
     'koszyk.apps.KoszykConfig',
     'zamowienia.apps.ZamowieniaConfig',
+    'platnosci.apps.PlatnosciConfig',
 ]
 
 MIDDLEWARE = [
@@ -82,8 +89,12 @@ WSGI_APPLICATION = 'sklep_internetowy.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'sklep_internetowy',
+        'USER': 'sklep',
+        'PASSWORD': 'sklep123',
+        'HOST': 'db',
+        'PORT': '5432',
     }
 }
 
@@ -139,3 +150,15 @@ KOSZYK_SESSION_ID = 'koszyk'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+
+# Ustawienia Braintree
+BRAINTREE_MERCHANT_ID = 'jkwysy64fr8ktnkx' # ID sprzedawcy (Merchant ID)
+BRAINTREE_PUBLIC_KEY = 'jk8rm4r4vskrvnby' # Klucz publiczny (Public Key)
+BRAINTREE_PRIVATE_KEY = 'df5bd47cb5e0ae78ad9ae5df67533838' # Klucz prywatny (Private key)
+from braintree import Configuration, Environment
+Configuration.configure(
+ Environment.Sandbox,
+ BRAINTREE_MERCHANT_ID,
+ BRAINTREE_PUBLIC_KEY,
+ BRAINTREE_PRIVATE_KEY
+)
