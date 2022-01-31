@@ -26,8 +26,8 @@ def order_create(request):
             # zmienna koszyk, jak nie działa to zmienić na plik koszyk
             #order_created.delay(order.id)
             if form.is_valid():
-                subject = 'Twoje zamówienie zostało złożone'
-                message = 'Dziękujemy za Twoje zamówienie w naszym sklepie.'
+                subject = 'Zamówienie nr {}'.format(order.id)
+                message = 'Witaj, {}!\n\nDziękujemy za złożenia zamówienia w naszym sklepie.\nIdentyfikator Twojego zamówienia to {}.\n\nPozdrawiamy i życzymy miłego dnia,\nDMA Shop'.format(order.imie, order.id)
                 recipient = form.cleaned_data.get('email')
                 send_mail(subject,
                           message,
@@ -35,9 +35,12 @@ def order_create(request):
                           [recipient],
                           fail_silently=False)
                 messages.success(request, 'Success!')
-            return render(request,
-                          'zamowienia/zamowienie/utworzone.html',
-                          {'order': order})
+            request.session['order_id'] = order.id  # Przekierowanie do płatności.
+            return redirect(reverse('platnosci:process'))
+
+            # return render(request,
+            #               'zamowienia/zamowienie/utworzone.html',
+            #               {'order': order})
     else:
         form = OrderCreateForm()
     return render(request,

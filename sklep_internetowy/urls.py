@@ -31,6 +31,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('koszyk/', include('koszyk.urls', namespace='koszyk')),
     path('zamowienia/', include('zamowienia.urls', namespace='zamowienia')),
+    path('platnosci/', include('platnosci.urls', namespace='platnosci')),
     path('', include('sklep.urls', namespace='sklep')), #cos tu nie teges
 
     #path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),

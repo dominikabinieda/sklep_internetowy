@@ -1,2 +1,3 @@
 celery==4.3.0
-redis==4.1.1
+psycopg2==2.9.3
+braintree~=4.13.1

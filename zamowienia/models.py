@@ -12,6 +12,7 @@ class Zamowienia(models.Model):
     utworzono = models.DateTimeField(auto_now_add=True)
     zaktualizowano = models.DateTimeField(auto_now=True)
     platnosc = models.BooleanField(default=False)
+    braintree_id = models.CharField(max_length=150, blank=True)
 
     class Meta:
         ordering = ('-id',)
