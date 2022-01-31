@@ -5,9 +5,13 @@ from django.shortcuts import render, get_object_or_404
 from .models import Category, Product
 from koszyk.forms import KoszykAddProductForm  # Dodanie produktu do koszyka na zakupy
 from rest_framework.views import APIView
+
+from rest_framework import status
+from rest_framework.generics import (ListCreateAPIView, RetrieveUpdateDestroyAPIView)
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
 
+from .models import Category
 
 class HelloView(APIView):
     permission_classes = (IsAuthenticated,)
@@ -42,3 +46,19 @@ def product_detail(request, id, slug):
                   'sklep/produkty/szczegoly.html',
                   {'product': product,
                    'koszyk_product_form': koszyk_produkt_form})
+
+
+class OrganizationAPI(ListCreateAPIView):
+    queryset = Category.objects.all()
+    #serializer_class = serializer.OrganizationSerializer
+    permission_classes = (IsAuthenticated,)
+
+    def create(self, request, *args, **kwargs):
+        serializer = self.get_serializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        self.perform_create(serializer)
+        headers = self.get_success_headers(serializer.data)
+        return Response({"status": True,
+                         "message": "Organization Added !",
+                         "data": serializer.data},
+                        status=status.HTTP_201_CREATED, headers=headers)
