@@ -4,6 +4,17 @@
 from django.shortcuts import render, get_object_or_404
 from .models import Category, Product
 from koszyk.forms import KoszykAddProductForm  # Dodanie produktu do koszyka na zakupy
+from rest_framework.views import APIView
+from rest_framework.response import Response
+from rest_framework.permissions import IsAuthenticated
+
+
+class HelloView(APIView):
+    permission_classes = (IsAuthenticated,)
+
+    def get(self, request):
+        content = {'message': 'Hello, World!'}
+        return Response(content)
 
 
 def product_list(request, category_slug=None):

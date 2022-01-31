@@ -29,6 +29,8 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
+
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -132,7 +134,11 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
-    'PAGE_SIZE': 10
+    'PAGE_SIZE': 10,
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.SessionAuthentication',
+        #'user.backends.JWTAuthentication'
+    ],
 }
 
 KOSZYK_SESSION_ID = 'koszyk'
@@ -145,5 +151,11 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 #EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 #CELERY_BROKER_URL = 'amqp://guest:guest@localhost:5672//'
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'djangotestgangusy@gmail.com'
+EMAIL_HOST_PASSWORD = 'zkqjztortlqozeol'
 
 

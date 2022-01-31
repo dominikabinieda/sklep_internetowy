@@ -4,7 +4,6 @@ from koszyk.forms import KoszykAddProductForm
 from koszyk.models import Koszyk
 from sklep.models import Product
 
-
 @require_POST
 def koszyk_add(request, product_id):
     koszyk = Koszyk(request)
@@ -32,3 +31,5 @@ def koszyk_wyswietl(request):
         item['update_quantity_form'] = KoszykAddProductForm(initial={'quantity': item['quantity'],
                                                                      'override': True}) #usunac w razie w , bo brak reszty do tego
     return render(request, 'koszyk/szczegoly.html', {'koszyk':koszyk})
+
+
